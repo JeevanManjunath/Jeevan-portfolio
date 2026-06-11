@@ -1103,3 +1103,52 @@ body::after{
 
     z-index:-1;
 }
+
+/* ================= Responsive Projects ================= */
+
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 25px;
+}
+
+.project{
+    width: 100%;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px){
+
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 768px){
+
+    .project{
+        padding: 25px;
+    }
+
+    .project h3{
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .project p{
+        font-size: 1rem;
+        line-height: 1.8;
+    }
+
+    .project-tags{
+        gap: 12px;
+    }
+
+    .pill{
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+}
